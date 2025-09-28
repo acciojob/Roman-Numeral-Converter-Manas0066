@@ -28,6 +28,15 @@ function convertToRoman(num) {
 }
 
 
+let input = prompt("Enter a number to convert to Roman:");
+input = parseInt(input);
+
+if (isNaN(input) || input <= 0) {
+  console.log("Please enter a valid positive number.");
+} else {
+  alert(`Roman numeral: ${convertToRoman(input)}`); 
+}
 
 // do not edit below this line
+// (remove this line if you are not running in Node.js environment)
 module.exports = convertToRoman;
